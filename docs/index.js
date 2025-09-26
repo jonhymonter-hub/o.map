@@ -1,27 +1,4 @@
-"use strict";
 
-let save_mode = "";
-let scale;
-const debug = false;
-
-//groups
-let markers_group = new L.FeatureGroup();
-let selected_polyline_markers_group = new L.FeatureGroup();
-let overpass_group = new L.FeatureGroup();
-let measure_group_path = new L.FeatureGroup();
-let measure_group = new L.FeatureGroup();
-let tracking_group = new L.FeatureGroup();
-let gpx_group = new L.FeatureGroup();
-let geoJSON_group = new L.FeatureGroup();
-var hotline_group = new L.FeatureGroup();
-var jsonLayer = L.geoJSON("", { color: "red" });
-let map;
-let tracking_timestamp = [];
-let myMarker;
-let gpx_selection_info = {};
-let gpx_string;
-let tilesLayer = "";
-let n;
 
 let files = [];
 
